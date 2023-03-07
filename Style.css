@@ -1,49 +1,156 @@
-.titulo-Principal{
-    padding-left: 30px;
-}
-
-
-#Banner{
-    width: 100%;
-}
-
-.Principal{
-    background: #cccccc;
+header{
+    background-color: #BBBBBB;
     padding: 20px;
 }
 
-.titulo-Centralizado{
-    text-align: center;
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
 }
 
-p{
-    text-align: center;
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+
 }
 
-em strong{
-    color:purple 
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-#Misión {
-    font-size: 20px;
+nav a{
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
 }
 
-.Diferenciales{
-    background: #ffffff;
-    padding: 30px;
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
 }
 
-.Items{
-    font-style: italic;
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
-ul{
+.productos li {
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-    }
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
 
-.imagenDiferenciales{
-    width: 35%;
-    }
+.productos li:hover{
+    border-color: #c78c19;
+} 
+
+.productos li:active {
+    border-color: #088c19;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+};
+
+.producto-Descripcion{
+    font-size: 18px;
+}
+
+.producto-Precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(Images/imagenesproductos/bg.jpg);
+    padding: 40px;
+}
+
+.Copyright{
+    color: #ffffff;
+    font-size: 13px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+
+.input-padron {
+    display:block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:#ffffff;
+    background: #ff6200;
+    border: none;
+    border-radius: 10px;
+    transition: 1s background;
+    cursor: pointer;
+    text-align: center;
+}
+
+.enviar:hover{
+        background: #ff8c00;
+        transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px; 
+}
+    
+thead{
+    background: #6f9905;
+    color:white;
+    font-weight: bold;
+}
+    
+td,th{
+    border: 1px solid #088c19;
+    padding: 10px 18px;
+}
