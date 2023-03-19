@@ -1,22 +1,25 @@
-header{
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
     background-color: #BBBBBB;
-    padding: 20px;
+    padding: 10px 0;
 }
 
 .caja{
     width: 940px;
     position: relative;
-    margin: 0 auto;
-
+    font-weight: bold;
+    margin: 1em 1em 1em 1em auto;
 }
 
 nav{
     position: absolute;
-    top: 110px;
+    font-weight: bold;
+    top:110px;
     right: 0;
-
 }
-
 
 nav li{
     display: inline;
@@ -25,9 +28,9 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color:black;
+    color: #000000;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
 }
 
@@ -36,13 +39,13 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.productos {
+.productos{
     width: 940px;
     margin: 0 auto;
     padding: 50px;
 }
 
-.productos li {
+.productos li{
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -50,107 +53,246 @@ nav a:hover{
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 2px solid #000000;
-    border-radius: 10px;
+    border: 3px solid #000000;
+    border-radius: 25px;
 }
 
 .productos li:hover{
-    border-color: #c78c19;
-} 
-
-.productos li:active {
-    border-color: #088c19;
+    border-color:#c78c19;
 }
 
-.productos h2 {
-    font-size: 30px;
+.productos li:active{
+    border-color:#088c19;
+}
+
+.productos h2{
+    font-size: 25px;
     font-weight: bold;
 }
 
 .productos li:hover h2{
-    font-size: 33px;
-};
+    font-size: 28px;
+}
 
-.producto-Descripcion{
+.producto-descripcion{
     font-size: 18px;
 }
 
-.producto-Precio{
+.producto-precio{
     font-size: 20px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top:10px;
 }
 
-footer {
+footer{
+    margin: auto;
+    padding:5px;
     text-align: center;
     background: url(Images/imagenesproductos/bg.jpg);
-    padding: 40px;
 }
 
-.Copyright{
-    color: #ffffff;
+.copyright{
+    color:#FFFFFF;
     font-size: 13px;
+    margin:20px;
 }
 
-main{
-    width: 940px;
-    margin: 0 auto;
+#contact-div{
+    margin: 0 10%;
+    font-weight: bold;
 }
 
-form {
-    margin: 40px 0;
+form{
+    margin: 40px 15px 15px 15px;
 }
 
-form label, form legend {
-    display:block;
+form label, form legend{
+    display: block;
     font-size: 20px;
+    font-weight: bold;
     margin: 0 0 10px;
-
 }
 
-.input-padron {
-    display:block;
+fieldset {
+    margin-top: 3%;
+}
+
+.input-padron{
+    display: inline-block;
+    border-color: darkorange;
+    border-radius: 10px;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
 
-.checkbox {
-    margin: 20px 0;
+.checkbox{
+    margin:20px 0;
+    padding: 10px;
 }
 
 .enviar{
-    width: 40%;
-    margin: 0 auto;
-    display: block;
-    padding: 15px 0;
+    width: 30%;
+    padding: 2%;
+    margin-bottom: 6em;
     font-size: 18px;
     font-weight: bold;
-    color:#ffffff;
-    background: #ff6200;
-    border: none;
+    color:white;
+    background: darkorange;
+    border:none;
     border-radius: 10px;
-    transition: 1s background;
-    cursor: pointer;
-    text-align: center;
+    transition: 1s all;
+    cursor:pointer;
 }
 
 .enviar:hover{
-        background: #ff8c00;
-        transform: scale(1.2);
+    border-color: rgb(34, 20, 4);
+    border-radius: 10px;
+    background: linear-gradient(rgb(98, 57, 6),rgb(184, 128, 23));
+    transform: scale(1.1);
 }
 
 table{
-    margin: 40px 40px; 
+    margin: 40px 40px;
 }
-    
+
 thead{
-    background: #6f9905;
+    background: darkorange;
     color:white;
     font-weight: bold;
 }
-    
+
 td,th{
-    border: 1px solid #088c19;
-    padding: 10px 18px;
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* INICIO DE CSS PARA NUESTRO HOME*/
+
+
+.banner{
+    width: 100%;
+    margin: auto;
+}
+
+.Principal{
+    padding: 3em;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;  
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 1em 1em 1em;
+    clear:left;
+    color: rgb(1, 13, 7);
+    transition: 100ms;    
+}
+
+.titulo-principal:hover{
+   opacity: 0.5;
+
+}
+
+.titulo-principal::before{
+    content: "⊑" ;                            
+    font-weight: bold;
+    color: #3b2b09;
+}
+
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+.titulo-principal::after{
+    content: "⊒";
+    font-weight: bold;
+    color: #3b2b09;
+}
+
+p::first-line{
+    font-style: italic;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: calc( (100% /6 ) + 10px);
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient( #FEFEFE, #888888);
+}
+
+.mapaContenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.Diferenciales{
+    padding: 3em;
+    background: #888888;
+}
+
+.contenidoDiferenciales{
+    width: 640px;
+    margin: 0  auto;
+} 
+
+.listaDiferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+    margin: 0 1em 1em;
+}
+
+.items::before{
+    content: "🟆";
+    color: #150f02;
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+    margin: 0 0 3em 3em;
+    transition: 400ms;
+    box-shadow: 10px 10px 20px 15px #012104;
+}
+
+.imagenDiferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    margin: 0 auto;
+    width: 560px;
+    display: block;
 }
